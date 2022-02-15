@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@register_user",
+        tags = "@login_user_excel",
         dryRun = false  // dry-run is used to checks if any step missing in step definition.
 )
 public class Runner {
@@ -28,5 +28,5 @@ public class Runner {
  *         : dryRun can be TRUE or FALSE
  *         : dryRun = false --> default behaviour, it runs the test on the browser while checking the missing steps
  *         : dryRun = true --> don't run tests on the browser and checks if there's any missing step definition
-
+            step definitionlari add yaptigimiz zaman ve dry run true olunca pass olur.
  */
