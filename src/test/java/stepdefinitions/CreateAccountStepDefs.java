@@ -10,7 +10,7 @@ import pages.HomePage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class RegisterUserStepDefs {
+public class CreateAccountStepDefs {
 
     HomePage homePage = new HomePage();
 
