@@ -12,7 +12,6 @@ Feature: VerifySubscriptionInHomePage
 
   @verify_subscription_in_cart_page
   Scenario: TC11_VerifySubscriptionInCart
-
     When user launches the browser
     And user navigates to home page
     And user verifies home page is visible

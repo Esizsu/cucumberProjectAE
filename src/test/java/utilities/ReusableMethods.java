@@ -32,5 +32,23 @@ public class ReusableMethods {
         actions.moveToElement(element).perform();
     }
 
+    public static void clickElementByJS(WebElement element) {
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
+        jsexecutor.executeScript("arguments[0].click();", element);
+    }
+
+
+    public static void clickWithJS(WebElement element) {
+        ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
+        ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].click();", element);
+    }
+
+    //Scroll into view with JS. THIS IS VERY USEFULL
+    public static void scrollIntoViewJS(WebElement element) {
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
+        jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
 
 }

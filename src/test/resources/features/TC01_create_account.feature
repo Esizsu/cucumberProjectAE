@@ -16,7 +16,6 @@ Feature:Register_User_Functionality
     When user enters name and email
     And user clicks signup_button
     And user verifies that enter account information is visible
-
     And user fills details
     And user selects checkbox signup for our newslater
     And user selects checkbox receive special offers
